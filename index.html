@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel = "stylesheet" href = "style.css">
+   
+    <title>Zer0tech</title>
+</head>
+
+<nav>
+  <ul class = "nav-list">
+    <li><a href = "wardrobe.html">News</a></li>
+    <button id = "login-btn">Log In</button>
+
+    <div id = "input">
+      <input id = "search"></input>
+    </div>
+  </ul>
+</nav>
+
+<body>
+
+  <div id = "login">
+    <form id = "login-form">
+      <input type = "email" id = "email" placeholder = "Email" required><br>
+      <input type = "password" id = "password" placeholder = "Password" required><br>
+      <button type = "submit">Log In</button>
+      <h3>or</h3>
+      <button type = "submit">Sign up</button>
+    </form>
+  </div>
+   
+  <div id = "sort-btns">
+    <button id = "asc-sort">Price ascending</button>
+    <button id = "desc-sort">Price descending</button>
+    <button id = "name-az-sort">Name (A-Z)</button>
+    <button id = "name-za-sort">Name (Z-A)</button>
+    <input id = "min-value" placeholder = "Min price">
+    <input id = "max-value" placeholder = "Max price">
+  </div>
+
+  <div id = "cards"></div>
+</body>
+ 
+  <script src = "storeFilter.js"></script>
+  <script src = "scrollToTop.js"></script>
+  <script src = "modalLogin.js"></script>
+  <script src = "addOnScroll.js"></script>
+
+</html>
