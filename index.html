@@ -1,50 +1,65 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel = "stylesheet" href = "style.css">
-   
+    <link rel="stylesheet" href="style.css">
     <title>Zer0tech</title>
 </head>
-
-<nav>
-  <ul class = "nav-list">
-    <li><a href = "wardrobe.html">News</a></li>
-    <button id = "login-btn">Log In</button>
-
-    <div id = "input">
-      <input id = "search"></input>
-    </div>
-  </ul>
-</nav>
-
 <body>
 
-  <div id = "login">
-    <form id = "login-form">
-      <input type = "email" id = "email" placeholder = "Email" required><br>
-      <input type = "password" id = "password" placeholder = "Password" required><br>
-      <button type = "submit">Log In</button>
+  <nav>
+    <ul class="nav-list">
+      <li><a href="wardrobe.html">News</a></li>
+      <button id="login-btn">Log In</button>
+
+      <div id="input">
+        <input id="search">
+      </div>
+    </ul>
+  </nav>
+
+  <div id="login">
+    <form id="login-form">
+      <input type="email" id="email" placeholder="Email" required><br>
+      <input type="password" id="password" placeholder="Password" required><br>
+      <button type="submit">Log In</button>
       <h3>or</h3>
-      <button type = "submit">Sign up</button>
+      <button type="button">Sign up</button>
     </form>
   </div>
    
-  <div id = "sort-btns">
-    <button id = "asc-sort">Price ascending</button>
-    <button id = "desc-sort">Price descending</button>
-    <button id = "name-az-sort">Name (A-Z)</button>
-    <button id = "name-za-sort">Name (Z-A)</button>
-    <input id = "min-value" placeholder = "Min price">
-    <input id = "max-value" placeholder = "Max price">
+  <div id="ad-window">
+    <span id="close-ad">×</span>
+    <div class="ad-content">
+        <h3>DISCOUNT</h3>
+        <p>50% OFF</p>
+    </div>
   </div>
 
-  <div id = "cards"></div>
-</body>
- 
-  <script src = "storeFilter.js"></script>
-  <script src = "scrollToTop.js"></script>
-  <script src = "modalLogin.js"></script>
-  <script src = "addOnScroll.js"></script>
+  <div id="sort-btns">
+    <button id="asc-sort">Price ascending</button>
+    <button id="desc-sort">Price descending</button>
+    <button id="name-az-sort">Name (A-Z)</button>
+    <button id="name-za-sort">Name (Z-A)</button>
+    <input id="min-value" placeholder="Min price">
+    <input id="max-value" placeholder="Max price">
+  </div>
 
+  <div id="cards"></div>
+
+  <div>
+    <input type="text" id="new-name" placeholder="new item name">
+    <input type="text" id="new-type" placeholder="new item type">
+    <input type="text" id="new-system" placeholder="new item system">
+    <input type="number" id="new-price" placeholder="new item price">
+    <button id="add-item">Add Item</button>
+  </div>
+
+  <script src="scripts/storeFilter.js"></script>
+  <script src="scripts/scrollToTop.js"></script>
+  <script src="scripts/modalLogin.js"></script>
+  <script src="scripts/newsSorter.js"></script>
+  <script src="scripts/adOnScroll.js"></script>
+
+</body>
 </html>

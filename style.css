@@ -142,3 +142,32 @@ button {
   opacity: 1;
   visibility: visible;
 }
+
+#ad-window {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  padding: 20px;
+  z-index: 9999;
+
+  transform: translateY(150%); 
+
+  background-color: #ffffff;
+  border: 2px solid black;
+  border-color: black;
+  border-radius: 8px;
+}
+
+#ad-window.show-ad {
+  transform: translateY(0);
+}
+
+#close-ad {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+}
